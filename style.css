@@ -58,6 +58,7 @@ nav a:hover {
 }
 
 main {
+  display: block;
   border-radius: 7px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.2);
   margin: -190px auto 100px;
