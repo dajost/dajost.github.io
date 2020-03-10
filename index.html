@@ -1,172 +1,167 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="device-width, initial-scale=1">
-		<title>Daniel Jost - Academic Website</title>
-		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700%7COpen+Sans:400,400i,700%7CWork+Sans:400,400i,700" rel="stylesheet">
-		<link rel="stylesheet" href="fontawesome/css/all.min.css">
-		<link rel="stylesheet" href="academicons/css/academicons.min.css">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-	</head>
-
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width, initial-scale=1">
+	<title>Daniel Jost - Academic Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700%7COpen+Sans:400,400i,700%7CWork+Sans:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="academicons/css/academicons.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
 <body>
-
-<div id="backdrop"></div>
-
-<div id="menu">
-	<ul>
-		<li><a href="#top">Home</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#publications">Publications</a></li>
-		<li><a href="#contact">Contact</a></li> 
-	</ul>
-</div>
-
-<div id="content">
-	<section id="header">
-		<div>
-			<h1>Daniel Jost</h1>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#publications">Publications</a></li>
+				<li><a href="#contact">Contact</a></li> 
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="header">
+			<div>
+				<h1>Daniel Jost</h1>
+				<p>
+					PhD Student<br>
+					<a href="https://crypto.ethz.ch/">Information Security and Cryptography Research Group</a><br>
+					<a href="https://www.ethz.ch/">ETH Zürich</a><br>
+					<a href="mailto:dajost@inf.ethz.ch"><span class="far fa-envelope"></span> dajost@inf.ethz.ch</a>
+				</p>
+				
+				<div id="publinks">
+					<a href="https://orcid.org/0000-0002-6562-9665" class="orcid"><span class="ai ai-orcid"></span> OrcID</a>
+					<a href="https://scholar.google.ch/citations?user=Rb5UizIAAAAJ"><span class="ai ai-google-scholar"></span> Google Scholar</a>
+					<a href="https://dblp.org/pers/hd/j/Jost_0001:Daniel"><span class="ai ai-dblp"></span> DBLP</a>
+				</div>
+			</div>
+			<img id="photo" src="me.jpg" width="165" height="220" alt="Daniel Jost">
+		</section>
+		<section id="about">
+			<h2>About</h2>
+			
 			<p>
-				PhD Student<br>
-				<a href="https://crypto.ethz.ch/">Information Security and Cryptography Research Group</a><br>
-				<a href="https://www.ethz.ch/">ETH Zürich</a><br>
-				<a href="mailto:dajost@inf.ethz.ch"><span class="far fa-envelope"></span> dajost@inf.ethz.ch</a>
+			I am a PhD in the Cryptography and Information Security Research Group at ETH Zürich, Switzerland, under the supervision of Prof. Ueli Maurer. I hold a bachelor's and master's degree in computer science from ETH Zürich.
 			</p>
 			
-			<div id="publinks">
-				<a href="https://orcid.org/0000-0002-6562-9665" class="orcid"><span class="ai ai-orcid"></span> OrcID</a>
-				<a href="https://scholar.google.ch/citations?user=Rb5UizIAAAAJ"><span class="ai ai-google-scholar"></span> Google Scholar</a>
-				<a href="https://dblp.org/pers/hd/j/Jost_0001:Daniel"><span class="ai ai-dblp"></span> DBLP</a>
-			</div>
-		</div>
-		<img id="photo" src="me.jpg" width="165" height="220" alt="Daniel Jost">
-	</section>
-	<section id="about">
-		<h2>About</h2>
-		
-		<p>
-		I am a PhD in the Cryptography and Information Security Research Group at ETH Zürich, Switzerland, under the supervision of Prof. Ueli Maurer. I hold a bachelor's and master's degree in computer science from ETH Zürich.
-		</p>
-		
-		<p>
-		I am interested in a broad spectrum of the field of cryptography, ranging from the foundational theoretical aspects of cryptography to the design and analysis of practical protocols. In particular, my research interests encompass the following topics:
-		</p>
-		<ul>
-			<li>The development of sound, rigorous, and modular security notions and frameworks that are tightly
-linked to the security objectives of real-world problems.</li>
-			<li>The design of practical schemes that match the intended security definitions, as well as the respective
-analysis of existing schemes.</li>
-		</ul>
-		<p>
-		For a complete CV or general inquiries, do not hesitate to contact me.
-		</p>
-	</section>
-	<section id="publications">
-		<h2>Publications</h2>
-		<section class="subsection">
-			<h3>Conference Papers</h3>
-			<div class="publication">
-				<h4>A Unified and Composable Take on Ratcheting</h4>
-				<div class="authors">Daniel Jost, Ueli Maurer, and Marta Mularczyk</div>
-				<div class="venue">Theory of Cryptography (TCC) 2019</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2019/694"><span class="ai ai-open-access"></span> ePrint</a>
-					<a href="https://doi.org/10.1007/978-3-030-36033-7_7"><span class="ai ai-doi"></span> DOI</a>
-				</div>
-			</div>
-			<div class="publication">
-				<h4>Efficient Ratcheting: Almost-Optimal Guarantees for Secure Messaging</h4>
-				<div class="authors">Daniel Jost, Ueli Maurer, and Marta Mularczyk</div>
-				<div class="venue">Advances in Cryptology &ndash; EUROCRYPT 2019</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2018/954"><span class="ai ai-open-access"></span> ePrint</a>
-					<a href="https://doi.org/10.1007/978-3-030-17653-2_6"><span class="ai ai-doi"></span> DOI</a>
-				</div>
-			</div>
-			<div class="publication">
-				<h4>Information-Theoretic Secret-Key Agreement: The Asymptotically Tight Relation Between
-the Secret-Key Rate and the Channel Quality Ratio</h4>
-				<div class="authors">Daniel Jost, Ueli Maurer, and João L. Ribeiro</div>
-				<div class="venue">Theory of Cryptography (TCC) 2018</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2017/1130 "><span class="ai ai-open-access"></span> ePrint</a>
-					<a href="https://doi.org/10.1007/978-3-030-03807-6_13"><span class="ai ai-doi"></span> DOI</a>
-				</div>
-			</div>
-			<div class="publication">
-				<h4>Security Definitions For Hash Functions: Combining UCE and Indifferentiability</h4>
-				<div class="authors">Daniel Jost and Ueli Maurer</div>
-				<div class="venue">Security and Cryptography for Networks (SCN) 2018</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2017/461"><span class="ai ai-open-access"></span> ePrint</a>
-					<a href="https://doi.org/10.1007/978-3-319-98113-0_5"><span class="ai ai-doi"></span> DOI</a>
-				</div>
-			</div>
-			<div class="publication">
-				<h4>An Automatic Encoding from VeriFast Predicates into Implicit Dynamic Frames</h4>
-				<div class="authors">Daniel Jost and Alexander J. Summers</div>
-				<div class="venue">Verified Software: Theories, Tools, Experiments (VSTTE) 2013</div>
-				<div class="pubfiles">
-					<a href="https://doi.org/10.1007/978-3-642-54108-7_11"><span class="ai ai-doi"></span> DOI</a>
-				</div>
-			</div>
+			<p>
+			I am interested in a broad spectrum of the field of cryptography, ranging from the foundational theoretical aspects of cryptography to the design and analysis of practical protocols. In particular, my research interests encompass the following topics:
+			</p>
+			<ul>
+				<li>The development of sound, rigorous, and modular security notions and frameworks that are tightly
+	linked to the security objectives of real-world problems.</li>
+				<li>The design of practical schemes that match the intended security definitions, as well as the respective
+	analysis of existing schemes.</li>
+			</ul>
+			<p>
+			For a complete CV or general inquiries, do not hesitate to contact me.
+			</p>
 		</section>
-		<!--<section class="subsection">
-			<h3>PhD Thesis</h3>
-			<div class="publication">
-				<h4>On Generalizations of Composable Security</h4>
-				<div class="authors">Daniel Jost</div>
-				<div class="venue">ETH Zürich, 2020</div>
-				<div class="pubfiles">
-					<a href="ThesisJost.pdf"><span class="far fa-file-pdf"></span> PDF</a>
+		<section id="publications">
+			<h2>Publications</h2>
+			<section class="subsection">
+				<h3>Conference Papers</h3>
+				<div class="publication">
+					<h4>A Unified and Composable Take on Ratcheting</h4>
+					<div class="authors">Daniel Jost, Ueli Maurer, and Marta Mularczyk</div>
+					<div class="venue">Theory of Cryptography (TCC) 2019</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2019/694"><span class="ai ai-open-access"></span> ePrint</a>
+						<a href="https://doi.org/10.1007/978-3-030-36033-7_7"><span class="ai ai-doi"></span> DOI</a>
+					</div>
 				</div>
-			</div>
-		</section>-->
-		<section class="subsection">
-			<h3>Manuscripts</h3>
-			<div class="publication">
-				<h4>Agree-and-Prove: Generalized Proofs Of Knowledge and Applications</h4>
-				<div class="authors">Christian Badertscher, Daniel Jost, and Ueli Maurer</div>
-				<div class="venue">Manuscript, 2019</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2019/662"><span class="ai ai-open-access"></span> ePrint</a>
+				<div class="publication">
+					<h4>Efficient Ratcheting: Almost-Optimal Guarantees for Secure Messaging</h4>
+					<div class="authors">Daniel Jost, Ueli Maurer, and Marta Mularczyk</div>
+					<div class="venue">Advances in Cryptology &ndash; EUROCRYPT 2019</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2018/954"><span class="ai ai-open-access"></span> ePrint</a>
+						<a href="https://doi.org/10.1007/978-3-030-17653-2_6"><span class="ai ai-doi"></span> DOI</a>
+					</div>
 				</div>
-			</div>
-			<div class="publication">
-				<h4>Overcoming Impossibility Results in Composable Security using Interval-Wise Guarantees</h4>
-				<div class="authors">Daniel Jost and Ueli Maurer</div>
-				<div class="venue">Manuscript, 2019</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2020/092"><span class="ai ai-open-access"></span> ePrint</a>
+				<div class="publication">
+					<h4>Information-Theoretic Secret-Key Agreement: The Asymptotically Tight Relation Between
+	the Secret-Key Rate and the Channel Quality Ratio</h4>
+					<div class="authors">Daniel Jost, Ueli Maurer, and João L. Ribeiro</div>
+					<div class="venue">Theory of Cryptography (TCC) 2018</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2017/1130 "><span class="ai ai-open-access"></span> ePrint</a>
+						<a href="https://doi.org/10.1007/978-3-030-03807-6_13"><span class="ai ai-doi"></span> DOI</a>
+					</div>
 				</div>
-			</div>
-			<div class="publication">
-				<h4>A note on the equivalence of IND-CCA & INT-PTXT and IND-CCA & INT-CTXT</h4>
-				<div class="authors">Daniel Jost, Christian Badertscher, and Fabio Banfi</div>
-				<div class="venue">Manuscript, 2018</div>
-				<div class="pubfiles">
-					<a href="https://eprint.iacr.org/2018/135"><span class="ai ai-open-access"></span> ePrint</a>
+				<div class="publication">
+					<h4>Security Definitions For Hash Functions: Combining UCE and Indifferentiability</h4>
+					<div class="authors">Daniel Jost and Ueli Maurer</div>
+					<div class="venue">Security and Cryptography for Networks (SCN) 2018</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2017/461"><span class="ai ai-open-access"></span> ePrint</a>
+						<a href="https://doi.org/10.1007/978-3-319-98113-0_5"><span class="ai ai-doi"></span> DOI</a>
+					</div>
 				</div>
-			</div>
+				<div class="publication">
+					<h4>An Automatic Encoding from VeriFast Predicates into Implicit Dynamic Frames</h4>
+					<div class="authors">Daniel Jost and Alexander J. Summers</div>
+					<div class="venue">Verified Software: Theories, Tools, Experiments (VSTTE) 2013</div>
+					<div class="pubfiles">
+						<a href="https://doi.org/10.1007/978-3-642-54108-7_11"><span class="ai ai-doi"></span> DOI</a>
+					</div>
+				</div>
+			</section>
+			<!--<section class="subsection">
+				<h3>PhD Thesis</h3>
+				<div class="publication">
+					<h4>On Generalizations of Composable Security</h4>
+					<div class="authors">Daniel Jost</div>
+					<div class="venue">ETH Zürich, 2020</div>
+					<div class="pubfiles">
+						<a href="ThesisJost.pdf"><span class="far fa-file-pdf"></span> PDF</a>
+					</div>
+				</div>
+			</section>-->
+			<section class="subsection">
+				<h3>Manuscripts</h3>
+				<div class="publication">
+					<h4>Agree-and-Prove: Generalized Proofs Of Knowledge and Applications</h4>
+					<div class="authors">Christian Badertscher, Daniel Jost, and Ueli Maurer</div>
+					<div class="venue">Manuscript, 2019</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2019/662"><span class="ai ai-open-access"></span> ePrint</a>
+					</div>
+				</div>
+				<div class="publication">
+					<h4>Overcoming Impossibility Results in Composable Security using Interval-Wise Guarantees</h4>
+					<div class="authors">Daniel Jost and Ueli Maurer</div>
+					<div class="venue">Manuscript, 2019</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2020/092"><span class="ai ai-open-access"></span> ePrint</a>
+					</div>
+				</div>
+				<div class="publication">
+					<h4>A note on the equivalence of IND-CCA & INT-PTXT and IND-CCA & INT-CTXT</h4>
+					<div class="authors">Daniel Jost, Christian Badertscher, and Fabio Banfi</div>
+					<div class="venue">Manuscript, 2018</div>
+					<div class="pubfiles">
+						<a href="https://eprint.iacr.org/2018/135"><span class="ai ai-open-access"></span> ePrint</a>
+					</div>
+				</div>
+			</section>
 		</section>
-	</section>
-	
-	<section id="contact">
-		<h2>Contact information</h2>
-		<p>
-		Institute of Theoretical Computer Science<br>
-		ETH Zentrum, CAB H15.2<br>
-		Universitätstrasse 6<br>
-		CH &ndash; 8092 Zürich<br>
-		</p>
-	</section>
-</div>
+		<section id="contact">
+			<h2>Contact information</h2>
+			<p>
+			Institute of Theoretical Computer Science<br>
+			ETH Zentrum, CAB H15.2<br>
+			Universitätstrasse 6<br>
+			CH &ndash; 8092 Zürich<br>
+			</p>
+		</section>
+	</main>
 </body>
 </html>
 

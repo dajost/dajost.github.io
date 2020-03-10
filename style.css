@@ -8,12 +8,12 @@ html, body {
   color: #333;
 }
 
-div#backdrop {
+header {
   background: #6f6f64;
   min-height: 300px;
 }
 
-div#menu {
+nav {
   margin: 0px;
   padding-top: 0px;
   position: fixed;
@@ -23,14 +23,14 @@ div#menu {
   height: 50px;
 }
 
-div#menu ul {
+nav ul {
   list-style-type: none;
   float: right;
   margin-right: 50px;
   padding-left: 0px;
 }
 
-div#menu li {
+nav li {
   display: inline-block;
   margin-left: 30px;
   overflow: visible;
@@ -39,25 +39,25 @@ div#menu li {
 }
 
 @media (max-width: 450px) {
-  div#menu ul {
+  nav ul {
     float: none;
     margin-right: 0px;
   }
 
-  div#menu li {
+  nav li {
     margin-left: 20px;
   }
 }
 
-div#menu a {
-  color: #eaeaea;
+nav a {
+  color: #eaeaea !important;
 }
 
-div#menu a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-div#content {
+main {
   border-radius: 7px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.2);
   margin: -190px auto 100px;
@@ -68,12 +68,12 @@ div#content {
   background: #fff;
 }
 
-div#content > section {
+main > section {
   padding: 40px 0px 10px;
   margin-top: -30px;
 }
 
-#header {
+main section#header {
   display: flex; 
   justify-content: space-between;
   align-items: flex-start;
@@ -83,23 +83,23 @@ div#content > section {
 }
 
 @media (max-width: 1170px) {
-  div#content {
+  main {
     margin: -270px auto 0px;
     border-radius: 0px;
   }
 }
 
 @media (max-width: 600px) {
-  div#content {
+  main {
     padding: 50px 25px;
   }
   
-  #header > img {
+  main section#header > img {
     display: none;
   }
 }
 
-#contact {
+section#contact {
   text-align: center;
   line-height: 1.6;
 }
@@ -200,11 +200,4 @@ a:link, a:visited {
 a:focus, a:hover, a:active {
   color: #d29d38;
   text-decoration: none;
-}
-
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  margin-left: 20px;
 }
