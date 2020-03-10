@@ -9,19 +9,18 @@ html, body {
 }
 
 div#backdrop {
-  /*background: #8c978a8f;*/
-  background: #7a8593;
+  background: #6f6f64;
   min-height: 300px;
 }
 
 div#menu {
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 0px;
   position: fixed;
   top: 0px;
-  background: #7a8593;
+  background: #6f6f64;
   width: 100%;
-  height: 60px;
+  height: 50px;
 }
 
 div#menu ul {
@@ -70,8 +69,8 @@ div#content {
 }
 
 div#content > section {
-  padding: 60px 0px 10px;
-  margin-top: -50px;
+  padding: 40px 0px 10px;
+  margin-top: -30px;
 }
 
 #header {
@@ -194,7 +193,7 @@ a {
 }
 
 a:link, a:visited {
-  color: #2a25ce;
+  color: #3431a8;
   text-decoration: none;
 }
 
